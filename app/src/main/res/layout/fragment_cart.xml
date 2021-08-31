@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context=".ui.cart.ShoppingBasketFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_10"
+        android:layout_weight="0.08">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/cart_IV_delete"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cairo"
+            android:layout_centerInParent="true"
+            android:textAlignment="viewStart"
+            android:paddingHorizontal="20dp"
+            android:text="@string/Requests"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cart_IV_delete"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@mipmap/ic_delete"
+            android:tint="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.92">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/cart_spin_Pickaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cart_spin_Pickaddress"
+            android:background="@color/grey_10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_RV_CartItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cart_spin_Pickaddress"
+            android:layout_above="@id/cart_LL_Order_Notes"/>
+
+
+        <!-- note with buttons -->
+        <LinearLayout
+            android:id="@+id/cart_LL_Order_Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:fontFamily="@font/cairo"
+                android:paddingVertical="5dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/Order_Notes"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cart_ET_Note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo"
+                android:paddingHorizontal="10dp"
+                android:minLines="1"
+                android:singleLine="false"
+                android:lines="3"
+                android:hint="@string/Please_do_not"
+                android:scrollbars="vertical"
+                android:background="@drawable/normal_border"
+                android:autofillHints="@string/Special_instructions"
+                android:inputType="textMultiLine"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/cart_ET_promocode"
+                    android:layout_width="0dp"
+                    android:layout_weight=".80"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/add_promo"
+                    android:maxLines="1"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/normal_border"
+                    android:autofillHints="@string/Special_instructions"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/cart_BTN_check_promo_code"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".20"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/cairobold"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:text="@string/check"
+                    android:enabled="false"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/promo_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/cairo"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textSize="18dp"
+                            android:text="@string/Order_Total"
+                            android:gravity="start"
+                            android:layout_weight="0.4" />
+                        <TextView
+                            android:id="@+id/cart_TV_OrderTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textSize="18dp"
+                            android:text="0 EGP"
+                            android:textAlignment="viewStart"
+                            android:gravity="start"
+                            android:layout_weight="0.6"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textSize="18dp"
+                            android:text="@string/Delivery_Charges"
+                            android:gravity="start"
+                            android:layout_weight="0.4"
+                            />
+                        <TextView
+                            android:id="@+id/cart_TV_DeliveryCharges"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textSize="18dp"
+                            android:text="0 EGP"
+                            android:textAlignment="viewStart"
+                            android:gravity="start"
+                            android:layout_weight="0.6"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:text="@string/Total"
+                            android:gravity="start"
+                            android:layout_weight="0.4"
+                            />
+                        <TextView
+                            android:id="@+id/cart_TV_Total"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairobold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:text="0 EGP"
+                             android:textAlignment="viewStart"
+                            android:gravity="start"
+                            android:layout_weight="0.6"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/cart_BTN_PlaceOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/cairobold"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:text="@string/Place_Order"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/gradient_addproduct_shadow"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

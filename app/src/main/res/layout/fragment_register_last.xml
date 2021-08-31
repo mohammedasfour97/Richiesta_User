@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context=".ui.cart.ShoppingBasketFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_10"
+        android:layout_weight="0.08">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/cairobold"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/Reg_final_step"
+            />
+
+
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:id="@+id/cart_IV_delete"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginHorizontal="10dp"-->
+        <!--            android:src="@mipmap/ic_delete"-->
+        <!--            android:tint="@color/colorPrimary"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.92">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_5"
+            android:gravity="center"
+            android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_5"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+
+            <ImageView
+                android:id="@+id/LastRegister_IV_IMG"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/logoicon" />
+
+            <Button
+                android:id="@+id/LastRegister_BTN_SelectIMG"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccentBrown"
+                android:textColor="@android:color/white"
+                android:text="@string/select_image" />
+
+            <EditText
+                android:id="@+id/LastRegister_ET_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/firstname"
+                android:gravity="start"
+                android:fontFamily="@font/cairoregular"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/LastRegister_ET_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lastname"
+                android:gravity="start"
+                android:fontFamily="@font/cairoregular"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/LastRegister_ET_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:gravity="start"
+                android:fontFamily="@font/cairoregular"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/LastRegister_ET_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Phone"
+                android:gravity="left"
+                android:enabled="false"
+                android:fontFamily="@font/cairoregular"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/LastRegister_ET_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/cairoregular"
+                    />
+
+                <ImageView
+                    android:id="@+id/LastRegister_IV_show_pass"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:alpha=".5"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_showpass" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/LastRegister_ET_repassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/rePassword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/cairoregular"
+                    />
+
+                <ImageView
+                    android:id="@+id/LastRegister_IV_show_repass"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:alpha=".5"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_showpass" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/LastRegister_BTN_RegisterNow"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/cairobold"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="@string/Registerـnow"/>
+
+        </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/gradient_addproduct_shadow"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

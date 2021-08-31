@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "499918552024",
+    "firebase_url": "https://richiesta-rkesta.firebaseio.com",
+    "project_id": "richiesta-rkesta",
+    "storage_bucket": "richiesta-rkesta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499918552024:android:f0e8af73a74e54a56e10ad",
+        "android_client_info": {
+          "package_name": "com.rkesta.richiesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499918552024-e656l674a7cmodhmc6l5isidr41vut3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rkesta.richiesta",
+            "certificate_hash": "f4256ae45b1f4d7330d80da7bb0752aa6e7b3568"
+          }
+        },
+        {
+          "client_id": "499918552024-sm3hqf47qbgko65bgo4os8r3bfkns7io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS9pt0chuUFd7q1f8Y49sgtrFc8gzVoZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499918552024-sm3hqf47qbgko65bgo4os8r3bfkns7io.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "499918552024-jc01sgkbd8rmduk5r1ptvh25o89a88gk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "badawits.com.richiesta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499918552024:android:2efdeefcb021a0176e10ad",
+        "android_client_info": {
+          "package_name": "com.rkesta.richiestadelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499918552024-bki70svu8l7j7qu9sfu5oipma9vb0dpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rkesta.richiestadelivery",
+            "certificate_hash": "f2af33c896a2b871dd11b27b5f42703eabbe3859"
+          }
+        },
+        {
+          "client_id": "499918552024-sm3hqf47qbgko65bgo4os8r3bfkns7io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS9pt0chuUFd7q1f8Y49sgtrFc8gzVoZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499918552024-sm3hqf47qbgko65bgo4os8r3bfkns7io.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "499918552024-jc01sgkbd8rmduk5r1ptvh25o89a88gk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "badawits.com.richiesta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

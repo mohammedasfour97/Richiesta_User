@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Richiesta</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_shoppingbasket">سلة التسوق</string>
+    <string name="title_settings">الأعدادات</string>
+
+        <string name="version_unknown">نسخه غير معروفه</string>
+<!--    <string name="version_unknown">unknown version</string>-->
+
+    <string name="action_settings">الأعدادات</string>
+
+    <string name="Edit_Profile">  تعديل الملف الشخصي  </string>
+
+    <string name="My_Orders">طلباتي</string>
+    <string name="Change_Password">تغيير كلمة المرور</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="Change_Email">تغيير البريد الالكتروني</string>
+    <string name="My_address_book">دفتر عناويني</string>
+    <string name="Change_Area">تغيير المنطقة</string>
+    <string name="Change_to">تغيير الى الانجليزية</string>
+    <string name="Help_Center">مركز المساعدة</string>
+    <string name="Terms_and_Condition">أحكام وشروط</string>
+    <string name="Privacy_Policy">سياسة الخصوصية</string>
+    <string name="Rate_US">قيمنا</string>
+    <string name="Logout">تسجيل خروج</string>
+    <string name="Find_answers">اعثر على إجابات لأسئلتك ،\n لا تتردد وأرسل لنا</string>
+    <string name="Message"> محتوى الرسالة </string>
+    <string name="send">إرسال</string>
+
+    <string name="Blank_field">من فضلك لا تترك الحقل فارغًا.</string>
+    <string name="Confirm">تاكيد</string>
+    <string name="Old_pass"> كلمة السر القديمه </string>
+    <string name="New_pass">كلمة السر الجديده</string>
+    <string name="Current_Password">كلمة السر الحاليه</string>
+    <string name="New_email"> البريد الالكتروني الجديد</string>
+    <string name="Change_email">تغيير البريد الالكتروني </string>
+    <string name="Special_instructions"> تعليمات خاصة </string>
+    <string name="Please_do_not">"  على سبيل المثال.\n   من فضلك لا تضيف شيئا محددا  "</string>
+    <string name="AddToBasket">   اضف الى السلة   </string>
+    <string name="Sizes">الأحجام</string>
+    <string name="Additionals">الإضافات</string>
+    <string name="Colors">الألوان</string>
+    <string name="Requests">الطلبات</string>
+    <string name="Order_Notes">ملاحظات الطلب</string>
+    <string name="Order_Total">المجموع الكلي</string>
+    <string name="Total">المجموع</string>
+    <string name="Delivery_Charges">قيمة التوصيل</string>
+    <string name="Place_Order">اطلب الأن</string>
+
+    <string name="Quantity">الكمية</string>
+    <string name="LookupLocation">ابحث عن الموقع المرغوب</string>
+    <string name="PickCountry">اختر الدوله</string>
+    <string name="PickCity">اختر المحافظه</string>
+    <string name="save">حفظ</string>
+    <string name="Phone">رقم الهاتف</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="Register">تسجيل</string>
+    <string name="byclicku_accept">بالنقر فوق تسجيل ، أنت تفهم وتوافق على</string>
+    <string name="and">و</string>
+    <string name="continueasguest">تواصل كضيف</string>
+    <string name="Reg_first_step">الخطوة ١ من ٣</string>
+    <string name="Reg_sec_step">الخطوة ٢ من ٣</string>
+    <string name="Reg_final_step">الخطوة ٣ من ٣</string>
+
+    <string name="Registerـnow">سجل الان</string>
+    <string name="firstname">الأسم الاول</string>
+    <string name="lastname">الأسم الاخير</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="rePassword">تأكيد كلمة السر</string>
+    <string name="select_image">اختر صورة</string>
+    <string name="EditProfile">تعديل الملف الشخصي</string>
+    <string name="Edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="new_address">عنوان جديد</string>
+    <string name="add_new">اضافه جديد</string>
+
+    <string name="address">عنوان ...</string>
+    <string name="bldngnum">رقم المبنى (اختياري) ...</string>
+    <string name="floornum">رقم الطابق (اختياري) ...</string>
+    <string name="aptnum">رقم الشقة (اختياري) ...</string>
+    <string name="addressNote">ملاحظة او علامة مميزة للمبنى</string>
+    <string name="Set_location">تحديد المكان</string>
+    <string name="back">الرجوع</string>
+
+    <string name="Congratulation">تهانينا لك</string>
+    <string name="Done">تم</string>
+    <string name="Date">تاريخ/وقت</string>
+    <string name="Order_Number">رقم الطلب</string>
+    <string name="Order_Status">الحالة</string>
+    <string name="loading">برجاء الانتظار ...</string>
+    <string name="not_val_addr">لا يمكن التوصيل لهذا المكان</string>
+
+</resources>

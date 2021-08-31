@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_item_cart_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_my_address_IV_home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/ic_home"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        app:tint="@color/colorPrimaryDark" />
+                    <TextView
+                        android:id="@+id/item_my_address_TV_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/cairobold"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/item_my_address_IV_home"
+                        android:text="address"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_my_address_IV_location"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/ic_location"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        app:tint="@color/colorPrimaryDark" />
+                    <TextView
+                        android:id="@+id/item_my_address_TV_homedetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/cairobold"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/item_my_address_IV_location"
+                        android:text="10,7,29"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    >
+
+                    <Button
+                        android:id="@+id/item_my_address_BTN_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingHorizontal="15dp"
+                        android:fontFamily="@font/cairobold"
+                        android:background="@drawable/custom_item_cart_bg"
+                        android:textColor="@color/grey_40"
+                        android:text="@string/delete"/>
+
+
+
+                    <Button
+                        android:id="@+id/item_my_address_BTN_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingHorizontal="15dp"
+                        android:fontFamily="@font/cairobold"
+                        android:visibility="gone"
+                        android:background="@drawable/custom_item_cart_bg"
+                        android:textColor="@color/grey_40"
+                        android:text="@string/Edit"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

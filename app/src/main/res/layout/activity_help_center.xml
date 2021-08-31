@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_3"
+    android:orientation="vertical"
+    tools:context=".ui.settings.Help_Center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_10"
+        android:layout_weight="0.08">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Help_Center_IV_DELIVERTO"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@mipmap/ic_close"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Help_Center_IV_DELIVERTO"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cairo"
+            android:text="@string/Find_answers"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/home_IV_DELIVERTO"
+        android:textColor="@color/grey_3"
+        android:layout_centerInParent="true"
+        android:text="@string/Find_answers"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/home_IV_DELIVERTO"
+        android:textColor="@color/grey_80"
+        android:gravity="center"
+        android:fontFamily="@font/cairobold"
+        android:layout_centerInParent="true"
+        android:text="@string/Message"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_3"
+        android:layout_weight="0.82">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/Help_Center_ET_etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="6"
+            android:paddingHorizontal="10dp"
+            android:singleLine="false"
+            android:lines="6"
+            android:scrollbars="vertical"
+            android:background="@drawable/rounded_border"
+            android:padding="@dimen/btn_flat_padding"
+            android:layout_marginStart="@dimen/spacing_mxlarge"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
+            android:inputType="textMultiLine"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Help_Center_BTN_Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/cairobold"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/send"/>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context=".ui.cart.ShoppingBasketFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_10"
+        android:layout_weight="0.08">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/cairobold"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/Reg_first_step"
+            />
+
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/cart_IV_delete"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:src="@mipmap/ic_delete"-->
+<!--            android:tint="@color/colorPrimary"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.92">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/logoicon"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/iv_boarder"
+                />
+
+            <LinearLayout
+                android:id="@+id/firstRegister_ll_phoneContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="bottom"
+                android:layoutDirection="ltr"
+                android:gravity="center_vertical">
+
+                <!--
+                    app:ccp_countryPreference="sa,eg"
+
+         app:ccpDialog_searchEditTextTint="@color/custom_editText_tint"
+         app:ccpDialog_backgroundColor="@color/custom_dialog_backgroud_color"
+         app:ccpDialog_textColor="@color/custom_dialog_text"
+         app:ccpDialog_fastScroller_bubbleColor="@color/custom_fastScroller_bubble"
+         app:ccpDialog_fastScroller_bubbleTextAppearance="@style/custom_text_appearance"
+         app:ccpDialog_fastScroller_handleColor="@color/custom_fastScroller_handle_color"
+         app:ccpDialog_showTitle = "false"
+                -->
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/firstRegister_ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairoregular"
+
+
+                    android:layout_alignParentLeft="true"
+                    android:layoutDirection="ltr"
+                    app:ccp_customMasterCountries="sa,eg"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_autoFormatNumber="true"
+
+                    app:ccp_defaultNameCode="SA"
+
+                    app:ccp_contentColor="@color/colorPrimaryBlack"
+                    app:ccp_flagBorderColor="@color/colorPrimaryBlack"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_rememberLastSelection="true"
+                    app:ccp_arrowSize="26sp"
+
+                    />
+                <EditText
+                    android:id="@+id/firstRegister_ET_carrierNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/firstRegister_ccp"
+                    android:editable="false"
+                    android:hint="123 45 678"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/cairoregular"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/firstRegister_BTN_continueasguest"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="120dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/cairobold"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="@string/Registerـnow"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/gradient_addproduct_shadow"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

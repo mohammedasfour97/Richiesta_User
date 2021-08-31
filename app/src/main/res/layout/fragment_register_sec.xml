@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context=".ui.cart.ShoppingBasketFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/grey_10"
+        android:layout_weight="0.08">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/cairobold"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/Reg_sec_step"
+            />
+
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/cart_IV_delete"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:src="@mipmap/ic_delete"-->
+<!--            android:tint="@color/colorPrimary"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.92">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/logoicon"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/iv_boarder"
+                />
+
+
+                <EditText
+                    android:id="@+id/secRegister_ET_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="- - - - - -"
+                    android:gravity="center"
+                    android:fontFamily="@font/cairoregular"
+                    android:singleLine="true" />
+
+            <Button
+                android:id="@+id/secRegister_BTN_Verify"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="120dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/cairobold"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="@string/Registerـnow"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/gradient_addproduct_shadow"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

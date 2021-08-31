@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="darkOverlay">#80000000</color>
+    <color name="darkOverlaySoft">#40000000</color>
+    <color name="whiteOverlay">#40FFFFFF</color>
+
+    <color name="colorPrimary">#3269a8</color>
+    <color name="colorPrimaryDark">#104C91</color>
+    <color name="colorPrimaryBlack">#011e40</color>
+    <color name="colorPrimaryweight">#4D6474</color>
+    <color name="colorPrimaryLight">#80BCFF</color>
+
+    <color name="colorAccentBrown">#A2501B</color>
+    <color name="colorAccent">#7ba5d4</color>
+    <color name="colorAccentDark">#5082bc</color>
+
+    <color name="colorDesc">#cfa007</color>
+
+    <color name="accept">#4caf4f</color>
+    <color name="declined">#c73c20</color>
+
+
+    <color name="White">#FFFFFF</color>
+    <color name="lightgray">#ECECEC</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="btn_flat_selector">#7ba5d4</color>
+    <color name="flat_pressed">#665082bc</color>
+    <color name="flat_disabled_text">#403269a8</color>
+    <color name="flat_normal_text">#185DAC</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_40_transparent">#40999999</color>
+    <color name="grey_40_2transparent">#20999999</color>
+    <color name="grey_90_transparent">#40263238</color>
+    <color name="PearlAqua">#88d8c0</color>
+    <color name="Hue">#f7cb73</color>
+    <color name="invalid_promo_status_txt">#A83232</color>
+    <color name="valid_promo_status_txt">#3269a8</color>
+</resources>
